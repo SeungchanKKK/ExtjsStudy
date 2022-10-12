@@ -1,0 +1,43 @@
+Ext.onReady(function() {
+	//컴포넌트 속성 설정 및 listners 이벤트보는 법
+	Ext.create("Ext.panel.Panel",{
+		width : 500,
+		height :500,
+		title : "6강 extjs 타이틀",
+		renderTo : Ext.getBody(),
+		layout : "border",
+		items : [{
+			xtype : "panel",
+			border :true,
+			collapsible : true,
+			flex:1,
+			region: "west",
+			title : "좌측입니다",
+			split: true,
+			html : "<b>안녕하세요</b>"
+		},{
+			xtype : "panel",
+			border :true,
+			flex:2,
+			region: "center",
+			layout:"border",
+			items : [{
+				xtype: "panel",
+				border :true,
+				flex :2,
+				region:"center",
+				layout:"center",
+				items : [{
+					xtype : "button",
+					text : "버튼클릭"
+				}]
+				},{
+				xtype: "panel",
+				border :true,
+				flex :1,
+				region:"south",
+				split : true
+			}]
+		}]
+	})
+})

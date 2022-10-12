@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	//Ext.window.window
+	var win = Ext.create("Ext.window.window",{});
+})

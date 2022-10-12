@@ -1,0 +1,15 @@
+Ext.onReady(function(){
+	Ext.create("Ext.panel.Panel",{
+		width : 300,
+		height : 300,
+		title : 'DataStore이해',
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'combo',
+			//Ext.data.Store
+			store : {
+				
+			}
+		}]
+	})
+})

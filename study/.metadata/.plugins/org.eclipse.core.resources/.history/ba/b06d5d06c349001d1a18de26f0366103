@@ -1,0 +1,14 @@
+Ext.onReady(function(){
+	Ext.create("Ext.grid.Panel",{
+		width : 500,
+		height : 500,
+		renderTo : Ext.getBody(),
+		columns : [{
+			text : '컬럼1'
+		},{
+			text : '컬럼2'
+		},{
+			text : '컬럼3'
+		}]
+	})
+})

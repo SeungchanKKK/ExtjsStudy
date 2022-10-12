@@ -1,0 +1,13 @@
+Ext.onReady(function(){
+	//1. ExtJS ALERT
+//	Ext.Msg.alert("타이틀","바디");
+	Ext.Msg.confirm("타이틀","바디");
+	
+	var cnf = confirm("컨펌입니다.");
+	if(cnf){
+		console.log("yes");
+	}
+	else{
+		console.log("no");
+	}
+})

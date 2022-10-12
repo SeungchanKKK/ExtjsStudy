@@ -1,0 +1,20 @@
+Ext.onReady(function(){
+	Ext.create("Ext.tab.Panel",{
+		width : 500,
+		height : 500,
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'panel',
+			title : '탭1'
+		},{
+			xtype : 'panel',
+			title : '탭2'
+		},{
+			xtype : 'panel',
+			title : '탭3'
+		},{
+			xtype : 'panel',
+			title : '탭4'
+		}]
+	})
+})

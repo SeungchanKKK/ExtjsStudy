@@ -1,0 +1,7 @@
+Ext.onReady(function(){
+	Ext.create("Ext.grid.Panel",{
+		width : 500,
+		height : 500,
+		renderTo : Ext.getBody()
+	})
+})

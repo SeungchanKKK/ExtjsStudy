@@ -1,0 +1,23 @@
+Ext.onReady(function(){
+	Ext.create("Ext.panel.Panel",{
+		width : 300,
+		height : 300,
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'combo',
+			displayField :'key',
+			valueField : 'value',
+			store : {
+				fields : ['key','value'],
+				proxy : {
+					type : 'ajax',
+					url : '/data/combo.json',
+					reader : {
+						type : 'json',
+						rootProperty : 'data'
+					}
+				}
+			}
+		}]
+	})
+})

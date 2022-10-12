@@ -1,0 +1,46 @@
+Ext.onReady(function(){
+	Ext.create("Ext.panel.Panel",{
+		width : 500,
+		height : 500,
+		title : '폼필드 알아보기',
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'textfield',
+			allowBlank : false,
+			emptyText : '입력하세요'
+		},
+		{
+			//<input type="password"/>
+			xtype : 'textfield',
+			inputType : 'password',
+			allowBlank : false,
+			emptyText : '패스워드입력하세요'	
+		},{
+			//<input type="datefield"/>
+			xtype : 'datefield',
+			allowBlank : false,
+			emptyText : '날짜를입력하세요',
+			format : 'y-m-d'	
+		},{
+			xtype : 'numberfield',
+			minValue : 0,
+			maxValue : 40
+		},{
+			xtype : 'timefield'
+		},{
+			//<input type ="file"/>
+			xtype : 'filefield',
+			emptyText :'파일 업로드',
+			buttonOnly : true
+		},{
+			//<input type ="checkbox"/>
+			xtype : 'checkboxfield',
+			boxLabel :'아이디기억'
+		},{
+			//<input type ="radio" name="aaa"/>
+			xtype : 'radiofield',
+			name : 'sex',
+			boxLabel :'남'
+		}]
+	})
+})

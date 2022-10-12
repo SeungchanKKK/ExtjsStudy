@@ -1,0 +1,18 @@
+/*
+ * This file launches the application by asking Ext JS to create
+ * and launch() the Application class.
+ */
+Ext.application({
+    extend: 'Study8.Application',
+
+    name: 'Study8',
+
+    requires: [
+        // This will automatically load all classes in the Study8 namespace
+        // so that application classes do not need to require each other.
+        'Study8.*'
+    ],
+
+    // The name of the initial view to create.
+    mainView: 'Study8.view.main.Main'
+});

@@ -1,0 +1,29 @@
+Ext.onReady(function(){
+	Ext.create("Ext.panel.Panel",{
+		width : 300,
+		height : 300,
+		title : 'DataStore이해',
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'combo',
+			editable :false,
+			value : 'second',
+			displayField : 'test1',
+			valueField:'test2',
+			//Ext.data.Store
+			store : {
+				fields : ['test1','test2','test3','test4'],
+				data :[{
+					test1 : '첫번째',
+					test2 : 'first'
+				},{
+					test1 : '두번째',
+					test2 : 'second'
+				},{
+					test1 : '세번째',
+					test2 : 'third'
+				}]
+			}
+		}]
+	})
+})

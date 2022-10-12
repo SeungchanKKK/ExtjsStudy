@@ -1,0 +1,32 @@
+Ext.onReady(function(){
+	Ext.create("Ext.grid.Panel",{
+		width : 500,
+		height : 500,
+		renderTo : Ext.getBody(),
+		columns : [{
+			flex : 1,
+			text : '컬럼1',
+			dataIndex : 'c1'
+		},{
+			flex : 1,
+			text : '컬럼2',
+			dataIndex : 'c2'
+		},{
+			flex : 1,
+			text : '컬럼3',
+			dataIndex : 'c3'
+		}],
+		store : {
+			fields : ['c1','c2','c3'],
+			data : [{
+				c1 : '컬럼1-1',
+				c2 : '컬럼1-2',
+				c3 : '컬럼1-3'
+			},{
+				c1 : '컬럼2-1',
+				c2 : '컬럼2-2',
+				c3 : '컬럼2-3'
+			}]
+		}
+	})
+})

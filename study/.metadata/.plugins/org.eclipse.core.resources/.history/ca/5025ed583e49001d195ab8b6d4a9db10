@@ -1,0 +1,37 @@
+Ext.onReady(function(){
+	Ext.create("Ext.tab.Panel",{
+		width : 500,
+		height : 500,
+		renderTo : Ext.getBody(),
+		tabPosition : 'left',
+		items : [{
+			xtype : 'panel',
+			title : '탭1',
+			items : [{
+				xtype : 'button',
+				text : '버튼1'
+			}]
+		},{
+			xtype : 'panel',
+			title : '탭2',	
+			items : [{
+				xtype : 'button',
+				text : '버튼1'
+			}]
+		},{
+			xtype : 'panel',
+			title : '탭3',
+			items : [{
+				xtype : 'button',
+				text : '버튼1'
+			}]
+		},{
+			xtype : 'panel',
+			title : '탭4',
+			items : [{
+				xtype : 'button',
+				text : '버튼1'
+			}]
+		}]
+	})
+})

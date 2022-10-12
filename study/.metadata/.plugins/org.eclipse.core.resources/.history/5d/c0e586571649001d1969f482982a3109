@@ -1,0 +1,72 @@
+Ext.onReady(function() {
+	//컴포넌트 속성 설정 및 listners 이벤트보는 법
+	Ext.create("Ext.container.Viewport",{
+		renderTo : Ext.getBody(),
+		layout : "border",
+		items : [{
+			xtype : 'panel',
+			height : 100,
+			header : false,
+			region : 'north',
+			items : [{
+				xtype : 'toolbar',
+				items : [{
+					xtype : 'button',
+					text : 'File'					
+				},{
+					xtype : 'button',
+					text : 'Edit'					
+				},{
+					xtype : 'button',
+					text : 'Source'					
+				}]
+			},{
+				xtype : 'toolbar',
+					items : [{
+					xtype : 'button',
+					iconCls :'x-fa fa-duotone fa-plus'					
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-regular fa-desktop"							
+				},{
+					xtype : 'button',
+					iconCls :'x-fa fa-floppy-o'	
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-play"							
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-pause"							
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-stop"							
+				}]
+			}]
+		},{
+			xtype : "panel",
+			width:150,
+			region: "west",
+			title: 'Project Explorer',
+			split: true,
+		},{
+			xtype : "panel",
+			title : '',
+			header : false,
+			flex:1,
+			region: "center",
+			layout  : "border",
+			items : [{
+				xtype: "panel",
+				title : 'app.js',
+				flex : 2,
+				region:"center",
+				},{
+				xtype: "panel",
+				title : 'Servers',
+				split : true,
+				flex :1,
+				region:"south",
+			}]
+		}]
+	})
+})

@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	alert("alert입니다.");
+	confirm("confirm입니까?");
+})

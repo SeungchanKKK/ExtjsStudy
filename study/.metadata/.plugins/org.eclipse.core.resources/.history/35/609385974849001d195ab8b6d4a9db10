@@ -1,0 +1,16 @@
+Ext.onReady(function({
+	/**
+	<select>
+	<option>test</option>
+	<option>test</option>
+	<option>test</option>
+	</select>
+	
+	<table>
+		<tr>
+			<td>
+			test1
+			</td>
+		</tr>
+	 */
+})

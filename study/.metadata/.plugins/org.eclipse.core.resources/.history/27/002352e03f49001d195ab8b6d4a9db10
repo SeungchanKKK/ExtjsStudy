@@ -1,0 +1,12 @@
+Ext.onReady(function(){
+	Ext.create("Ext.panel.Panel",{
+		width : 500,
+		height : 500,
+		title : '폼필드 알아보기',
+		renderTo : Ext.getBody(),
+		items : [{
+			xtype : 'textfield',
+			allowBlank : false
+		}]
+	})
+})

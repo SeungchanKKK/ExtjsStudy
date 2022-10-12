@@ -1,0 +1,32 @@
+{
+  "children": [
+    {
+      "text": ".settings",
+      "expanded": true,
+      "children": [
+        {
+          "text": "eclipse",
+          "leaf": true
+        }
+      ]
+    },
+    {
+      "text": ".Tomcat",
+      "expanded": true,
+      "children": [
+        {
+          "text": "catalina.policy",
+          "leaf": true
+        },
+        {
+          "text": "catalina.properties",
+          "leaf": true
+        }
+      ]
+    },
+    {
+      "text": ".project",
+      "leaf": true
+    }
+  ]
+}

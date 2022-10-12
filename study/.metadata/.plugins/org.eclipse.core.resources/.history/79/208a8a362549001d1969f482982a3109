@@ -1,0 +1,112 @@
+Ext.onReady(function() {
+	/**컴포넌트 속성 설정 및 listners 이벤트보는 법
+	*기본버튼,
+	*크기별 버튼,
+	*토글버튼
+	*메뉴버튼
+	*아이콘+텍스트버튼
+	*분할된메뉴버튼
+	*그룹버튼
+	*/
+	Ext.create("Ext.container.Viewport",{
+		renderTo : Ext.getBody(),
+		layout : "border",
+		items : [{
+			xtype : 'panel',
+			height : 100,
+			header : false,
+			region : 'north',
+			items : [{
+				xtype : 'toolbar',
+				items : [{
+					xtype : 'button',
+					text : 'File',
+					menu : [{	
+						text : 'New',
+						iconCls : 'x-fa fa-file'					
+					},{	
+						text : 'Open File'					
+					},{	
+						text : 'Close'					
+					}]					
+				},{
+					xtype : 'splitbutton',
+					text : 'Edit',
+					menu : [{	
+						text : 'Undo Typing'					
+					},{	
+						text : 'Redo'					
+					},{	
+						text : 'cut'					
+					}]					
+				},{
+					xtype : 'button',
+					text : 'Source'					
+				},{
+					xtype : 'segmentedbutton',
+					allowMultiple : true,
+					items : [{
+						xtype : 'button',
+						text : 'Refeactor'
+					},{
+						xtype : 'button',
+						text : 'Navigate'
+					},{
+						xtype : 'button',
+						text : 'Search'
+					}]
+				}]
+			},{
+				xtype : 'toolbar',
+					items : [{
+					xtype : 'button',
+					iconCls :'x-fa fa-duotone fa-plus'					
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-regular fa-desktop"							
+				},{
+					xtype : 'button',
+					iconCls :'x-fa fa-floppy-o'	
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-play",
+					scale : 'small'							
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-pause",
+					scale : 'medium'							
+				},{
+					xtype : 'button',
+					iconCls :"x-fa fa-stop",
+					scale : 'large',
+					enableToggle: true							
+				}]
+			}]
+		},{
+			xtype : "panel",
+			width:150,
+			region: "west",
+			title: 'Project Explorer',
+			split: true,
+		},{
+			xtype : "panel",
+			title : '',
+			header : false,
+			flex:1,
+			region: "center",
+			layout  : "border",
+			items : [{
+				xtype: "panel",
+				title : 'app.js',
+				flex : 2,
+				region:"center",
+				},{
+				xtype: "panel",
+				title : 'Servers',
+				split : true,
+				flex :1,
+				region:"south",
+			}]
+		}]
+	})
+})

@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	//1. ExtJS ALERT
+	Ext.create("Ext.Msg");
+})

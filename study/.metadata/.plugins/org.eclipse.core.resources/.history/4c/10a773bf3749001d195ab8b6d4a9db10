@@ -1,0 +1,19 @@
+Ext.onReady(function(){
+	//Ext.window.window
+	Ext.create("Ext.panel.Panel",{
+		border : true,
+		width : 300,
+		height : 300,
+		renderTo : Ext.getBody()
+	})
+	var win = Ext.create("Ext.window.Window",{
+		width : 300,
+		height : 300,
+		autoShow : true,
+		title : 'Window Title',
+		layout: "south",
+		items : [{
+			xtype : 'button'
+		}]
+	});
+}) 

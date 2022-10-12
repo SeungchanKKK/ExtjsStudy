@@ -1,0 +1,4 @@
+Ext.onReady(function(){
+	//1. ExtJS ALERT
+	Ext.Msg.alert("타이틀","바디");
+})

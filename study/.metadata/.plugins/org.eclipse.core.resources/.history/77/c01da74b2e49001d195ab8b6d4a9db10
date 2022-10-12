@@ -1,0 +1,13 @@
+Ext.onReady(function(){
+	//1. ExtJS ALERT
+	//Ext.Msg.alert("타이틀","바디");
+	/*Ext.Msg.confirm("타이틀","바디",function(button){
+		if(button == 'yes'){
+			alert("예");
+		}
+		else {
+			alert("아니오");
+		}
+	});*/
+	Ext.toast("토스트창입니다.")
+})
